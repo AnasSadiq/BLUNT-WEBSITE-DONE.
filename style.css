@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --main-bg-blck-color:  black;
+    --main-bg-color: #f7dddd;
+    --font-size-1: 1rem;
+    --font-size-01: 1.1rem;
+    --font-size-3: 3rem;
+    --font-size-4: 4rem;
+    --font-size-04: 1.4rem; 
+}
+
+/* NAvbar start here */
+.nav-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    position: sticky;
+    top: 0;
+    margin-top: 20px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: var(--font-size-01);
+}
+
+ul a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--main-bg-blck-color);
+}
+a:hover{
+    border-bottom: 1px solid var(--main-bg-blck-color);
+}
+.img-container{
+    /* height: 0; */
+    width: 100px;
+}
+img{
+    width: 100%;
+}
+/* NAvbar end here */
+
+/* banner start here */
+.banner-container{
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/Classic-homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--main-bg-color);
+}
+.banner-text-container{
+    margin-left: 50px;
+    margin-top: 170px;
+}
+.banner-hd{
+    font-size: var(--font-size-3);
+    margin-bottom: 40px;
+}
+
+.banner-text{
+    font-size: var(--font-size-01);
+    margin: 5px 0px;
+}
+.banner-btn-img{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.b-btn{
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.b-btn:hover{
+    transition: linear 0.2s;
+    transform: translate(0.5px,0.5px);
+    font-weight: 800;
+}
+.banner-img{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+/* banner end here */
+
+/* blunt-card-details-start-here */
+.blunt-card-details-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.card-details{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.blunt-main-img{
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+}
+img{
+    width: 100%;
+}
+.blunt-card-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+.main-heading{
+    font-size: var(--font-size-04);
+    font-weight: 600;
+    margin: 10px 0px; 
+    font-style: italic;
+}
+.blunt-card-paragraph{
+    font-size: var(--font-size-1);
+    margin-bottom: 20px;
+    margin-left: 18px;
+    font-style: italic;
+}
+
+/* blunt-card-details-end-here */
+
+/* card-hd-start-here */
+.card-hd-main-container{
+    display: flex;
+    justify-content: center;
+}
+.card-hd-child-container{
+    font-size: var(--font-size-3);
+    margin-top: 50px;
+    font-weight: 600;
+}
+/* card-hd-end-here */
+
+/* Card start here */
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.card{
+    background-color: #fce8e8;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    transition: linear 0.2s;
+}
+.card:hover{
+    transform: translate(1px,1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-img{
+    width: 300px;
+    height: 300px;
+}
+img{
+    width: 100%;
+}
+.card-main-text-content{
+    margin-left: 30px;
+}
+.hd{
+    font-size: var(--font-size-01);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-text{
+    font-size: var(--font-size-01);
+    margin-top: 5px;
+}
+.card-price-logo-center{
+    display: flex;
+    margin: 25px 0px;
+}
+.card-prise{
+    font-size: var(--font-size-04);
+    /* font-weight: 1000; */
+}
+.card-1-logo-img{
+    width: 25px;
+    height: 25px;
+    margin-left: 150px;
+}
+/* Card end here */
+
+
+/* gallery-container-end-here */
+
+.gallery-main-hd-parent-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.gallery-main-child-hd-container{
+    font-size: var(--font-size-3);
+    font-weight: 600;
+}
+
+.gallery-main-parent-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+.img-child-img{
+    width: 550px;
+    height: 400px;
+    
+}
+img{
+    width: 100%;
+    border-radius: 5%;
+}
+.img-child-text-container{
+    width: 200px; 
+}
+/* .img-child-container-2nd{
+    display: flex;
+    flex-direction: column;
+} */
+.img-child-text-container-1st{
+    font-size: var(--font-size-04);
+    font-weight: 600;
+}
+.img-child-text-container-2nd{
+    font-size: var(--font-size-01);
+    width: 550px;
+    margin: 30px 0px;
+}
+.img-child-text-container-3rd{
+    font-size: var(--font-size-01);
+    width: 550px;
+}
+.img-child-text-btn-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 29px;
+}
+.img-child-text-logo-btn-container{
+    background-color: var(--main-bg-color);
+    width: 225px;
+    height: 55px;
+    font-size: var(--font-size-01);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.img-child-text-logo-btn-container:hover{
+    background-color: #ee9999;
+    transition: linear 0.3s;
+}
+.child-text-logo-btn-img-container{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.img-child-img-2nd{
+    width: 550px;
+    margin-top: 47px;
+}
+
+/* gallery-container-end-here */
+
+/* instagram-cards start here */
+
+.instagram-main-hd-container{
+    display: flex;
+    justify-content: center;
+}
+.instagram-main-hd-child{
+    font-size: var(--font-size-3);
+    font-weight: 550;
+    margin-bottom: 50px;
+}
+
+.instagram-card-main-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.instagram-img{
+    width: 300px;
+}
+img{
+    width: 100%;
+}
+/* instagram-cards end here */
+
+/* footer start here */
+
+.footer-main-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--main-bg-blck-color);
+    color: var(--main-bg-color);
+    margin-top: 30px;
+    height: 200px;
+}
+li{
+    font-size: var(--font-size-01);
+    list-style: none;
+    margin: 10px 0px;
+}
+.blunt-heading{
+    font-size: var(--font-size-3);
+    font-weight: 600;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+/* footer end here */
